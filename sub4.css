@@ -1,0 +1,252 @@
+
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+ }
+ 
+ @font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+ }
+ 
+ @font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+ }
+ 
+ .nanumbarungothic * {
+  font-family: 'NanumBarunGothic', sans-serif;
+ }
+ 
+ * {margin: 0;padding: 0;}
+ 
+ *{
+   margin:0;
+   padding:0;}
+   
+   a{ text-decoration:none;
+    }
+  ul,ol{list-style: none;}
+ 
+  body{
+    font-family: " NanumBarunGothic";
+    font-size:15px;
+    line-height:24px;
+ 
+
+    color:#1f0b02;
+    text-align: center;
+    min-width:1350px;}
+ 
+ 
+ /*header*/
+ 
+ 
+#header{ background:white; border-top: 5px solid #fbf2ee ;}
+#headerin{  width: 1320px ; margin: 0 auto;}
+
+.mb .swiper-button-next {color: white;}
+.mb .swiper-button-prev {color: white;}
+#header{height: 80px;  margin:0 auto; 
+position: relative;/*로고포지션의 부모
+기준*/ padding: 10px 0;}
+
+ .logo{ float: left; position: absolute; left: 50%; top: 30px;  transform: translateX(-50%)}/*가로길이의 절반만큼 앞으로 이동*/
+.list1{float: right; }
+ .list1 li{ float: left;padding: 20px; }
+.list1 li a{ font-size: 14px ; color: #1f0b02; font-weight: bold;}
+ 
+
+#nav{ clear: both; height: 54px; background:white; }
+#navin{ width: 1320px ; margin: 0 auto; }
+
+ #navin>ul>li{ float: left;  padding: 15px 0;  text-align: center; width: 20%; font-size: 18px; font-weight: bold;}
+#navin>ul>li>a{ color:#1f0b02;}
+
+.sub li a{display: block; padding: 10px 0; background: #744f49; opacity: 50%; color: #fff; font-size: 17px; font-weight: bold; border-top: 1px solid rgba(255,255,255, 0.3); border-bottom:1px solid rgba(0,0,0, 0.3) ;}
+.sub li a:hover{ background: #fbf2ee; color: #744f49; opacity: 50%; transition: all 1s; }
+
+.sub{ position: absolute; top: 54px; left: 0; width: 100%; z-index:10;}
+
+#navin>ul>li{ position: relative; /*서브메뉴포지션기준*/}
+.sub{ opacity: 0; transform: scaleY(0); transform-origin: top; /* 스케일의 기준점 변경 호버가 아니라 서브에 지정해야*/} /*투명도와 스케일속성으로 높이를 0으로 만들어 안보이개 한다*/
+#navin>ul>li:hover>.sub{ opacity: 1; transform: scaleY(1); transition: all 1s;}
+
+
+
+
+#banner{ position: relative;}
+
+ .banner4tit{ font-size:55px ; color: #fff;  ;position: absolute; top: 40%; right: 30px;}
+
+ #hands{ width: 1320px ; margin: 0 auto; padding: 50px; }
+ h4{ font-size: 18px; text-align: center;  padding: 30px;}
+ h3{ font-size: 20px; text-align: center;  font-weight: 500;  padding: 30px;}
+ h2{ font-size: 28px;  line-height: 45px; padding: 50px 0;}
+ h1{ color: #292929; font-size: 35px; font-weight: bold;  line-height: 60px; text-align:center; padding: 80px 0 30px;}
+   p{ font-size: 15px; padding:20px 0;  text-align: left;  line-height: 25px;}
+ 
+ .mm{ box-shadow: 5px 5px 5px rgba(0,0,0, 0.3); width: 100%;}
+ .mm1{ width: 1320px ; margin: 0 auto; padding: 30px; height: 200px; }
+ .c1{float: left; padding: 20px 50px 50px 50px ; color: #000; font-weight: 700;}
+ .c2{float:right;  padding: 20px 50px 0px 50px ;  color: #000;}
+ .make{ float: left; width: 180px; clear: both;}
+ .maketext{ float: right; width: 1000px; height: 180px; padding: 30px 0;  box-sizing: border-box;}
+ 
+ 
+
+.textend{ float: right; padding: 20px 100px; text-align: right;}
+
+
+
+ 
+ 
+ 
+ #tab_content{  margin: 0 auto; width: 1320px; padding: 100px; height: 1900px;}
+ .scbox{ float: left; width: 400px; height: 350px; background-size: cover; padding-right: 20px;  padding-bottom: 50px; border-radius: 5px;}
+ .st1{ padding-left: 30px;}
+
+
+th{ background-color: #666; color: #fff; font-size: 17px; padding: 10px; width:14.28% ;  }
+ td{ text-align: left; vertical-align: top; height: 100px; padding: 10px; font-size: 15px; border-left: 1px solid lightcoral ; 
+  border-bottom:1px solid lightcoral ; }
+table{ margin: 0 auto; border-collapse: collapse; width: 1000px;padding: 10px;}
+#tablem{ margin: 0 auto;  border: 18px solid lightsalmon; width: 1000px;}
+
+.sun{ color: red;}
+.sat{ color: blue;}
+ 
+ ul,
+     ol {
+       list-style: none;
+     }
+ 
+     a {
+       text-decoration: none;
+       color: #111;
+       font-size: 20px;
+       font-weight: bold;
+     }
+ 
+     #wrapper {
+       width: 1320px;
+       margin: auto; text-align: center;
+     }
+ 
+     /*탭 메뉴 모양*/
+     .tabs li {
+       float: left;
+       	font-size: 18px;
+     }
+ 
+     .tabs li a{display: block;  font-size: 18px;  background-color:#fbf2ee; color:#744f49;   padding: 10px 0; font-weight: bold; width: 200px;}
+
+     .tabs {display: inline-block;
+       height: 28px;
+       margin: 20px 0 50px; 
+     }
+ 
+     .border-radius1{ border-radius: 40px 0 0 40px;}
+     .border-radius2{ border-radius: 0 40px 40px 0;}
+     /*메뉴를 눌렀을 적용될 스타일 ㄶ기*/
+     .tabs li.active a {
+      color:#fbf2ee; background-color: #744f49; 
+     }
+ 
+     /* 액티브라는 클래스는 변경하지 마세요. 스타일내용만 수정*/
+ 
+ 
+     /*탭 컨텐츠 꾸미기*/
+     .tab_content {
+       
+       padding: 30px 0;
+     }
+ 
+ 
+#sc{ clear: both; margin: 0 auto; width: 1320px;    }
+.contents2{border-radius: 30px 0px;  background-color:#fbf2ee ; box-shadow: 5px 5px 5px rgba(0,0,0,0.3); height: 800px;}
+
+.sctext{ margin: 0 auto; width: 1320px; 
+    height: 300px; padding: 20px; padding-top: 50px; box-sizing: border-box;}
+
+.sctext p{ font-size: 16px; padding:20px ;  text-align: left;  line-height: 25px;}
+.scimg{ width: 100%;}
+.arrow_po{position: relative;}
+.center{padding-bottom: 30px;}
+
+
+.con_prev{ color: #fff;
+  left:36px;}
+.con_next{color: #fff;
+  right: 36px;}
+
+.center .swiper-pagination-bullet{background-color: #744f49; 
+
+}
+
+
+
+
+
+
+
+
+
+
+#footer{clear: both;
+  background:#522b19;
+  height:200px;
+  padding:30px 0;
+}
+
+ 
+#footer_inner{
+  width:1320px;
+  margin:0 auto;
+}
+
+.copyright ul li{
+  float:left;
+  padding-right:10px;
+}
+.copyright ul li a{
+  color:#ccc;
+}
+
+.copyright li a:hover{
+ color: #fff;
+}
+
+.copyright p{
+  padding-top:30px;
+  clear:both;
+  color:#ccc;
+}
+
+.sns li{
+  float:left;
+  padding-left:5px;
+  opacity:0.5;
+}
+.sns li:hover{
+  opacity:1;
+  transition:all 0.5s;
+}
+
+.copyright{
+  float:left; padding-top: 20px;
+}
+.sns{
+  float:right;
+}
+#footer_inner p{ clear: both; text-align: left; color: #fff; padding: 30px 0;}

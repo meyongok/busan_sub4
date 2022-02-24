@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1350">
+    <title>부산한과</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--aos css 연결-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aos js 연결-->
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
+
+    <link rel="stylesheet" href="sub4.css">
+
+    
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        //처음들어갔을때 모습 만들기...
+        $(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+        $("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+        $(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+        //On Click Event
+        $("ul.tabs li").click(function () {
+
+            $("ul.tabs li").removeClass("active"); //Remove any "active" class
+            $(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+            $(".tab_content").hide(); //모든 contents들 숨김
+
+            var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+            /*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+            .find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.
+            아이디 값을 찾아서 넣는거 같다.*/
+            $(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+            return false;
+        });
+
+    });
+</script>
+</head>
+
+    <body>
+        <div id="header">
+            <div id="headerin">
+    
+            <div class="logo">
+                <a href="https://meyongok.github.io/busan/">
+                    <img src="images/logo.png" alt="로고">
+                </a>
+            </div>
+    
+            <ul class="list1">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">주문조회</a></li>
+                <li><a href="#">장바구니</a></li>
+            </ul>
+        </div>
+        </div>
+    
+    
+    
+    
+    
+    
+        <div id="nav">
+            <div id="navin">
+                <ul>
+                    <li><a href="https://meyongok.github.io/busan_sub1">부산한과</a>
+                        <ul class="sub">
+    
+                            <li><a href="#"> 회사소개 </a></li>
+                            <li><a href="#"> 한과소개 </a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href=" https://meyongok.github.io/busan_sub2">쇼핑몰</a>
+                        <ul class="sub">
+    
+                            <li><a href="#"> 한과선물세트 </a></li>
+                            <li><a href="#"> 한과단품 </a></li>
+                            <li><a href="#"> 건강차 </a></li>
+    
+                        </ul>
+                    </li>
+    
+    
+    
+                    <li><a href="https://meyongok.github.io/busan_sub3">이벤트</a> </li>
+    
+                    <li><a href="https://meyongok.github.io/busan_sub4"> 체험학습</a>
+                        <ul class="sub">
+                            <li><a href="#">체험학습 소개 </a></li>
+                            <li><a href="#"> 체험학습 예약하기 </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://meyongok.github.io/busan_sub5">고객센터</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항 </a></li>
+                            <li><a href="#">고객문의 </a></li>
+                            <li><a href="#">오시는 길 </a></li>
+                        </ul>
+            </div>
+        </div>
+
+
+    <div id="banner">
+        <img src="images/banner4.jpg" alt="서브4배너이미지" width="100%">
+        <div data-aos="fade-left" data-aos-duration="2000" class="banner4tit">  Hands-On Activities</div>
+        </div>
+    
+
+
+    
+
+	<div id="wrapper">
+
+		<!--탭 메뉴 영역 -->
+		<ul class="tabs">
+			<li><a href="#tab1"class="border-radius1">체험학습 소개</a></li>
+			<li><a href="#tab2">체험학습 예약하기</a></li>
+			<li><a href="#tab3" class="border-radius2">갤러리</a></li>
+			<!--tab1을 누르면 아이디가 tab1인 박스가 밑에 나타나게 된다. 해당 아이디는 변경이 가능하나 해당콘텐츠 박스의 아이디도 같이 변경해야 한다-->
+
+		</ul>
+
+		<!--탭 콘텐츠 영역 -->
+
+
+
+
+<div class="tab_container">
+
+			<div id="tab1" class="tab_content">
+                
+
+		<div id="hands">
+<h1> 체험학습</h1>
+<h3> 식품 명인과 함께하는 체험학습 프로그램입니다.</h3>
+
+<h2> 찹쌀유과 만들기</h2>
+
+<h4>한과 하면 가장 먼저 떠오르는 찹쌀유과는 폭신폭신 부드러운 식감과 달콤하고 고소한 맛이 일품입니다. <br>
+    호정식품에서 진행하는 유과체험에는 자연에서 귀하게 얻은 오방색 원료가 사용됩니다. 국산 백년초, 대나무잎, 단호박, <br>
+    검정쌀, 찹쌀가루를 섞은 쌀튀밥으로 알록달록 빛깔고운 오방색 찹쌀유과를 만드는 체험으로 마지막에 다양한 견과류로 예쁜 고명을<br>
+   
+    얹는 과정을 거치므로 체험이 끝날때까지 눈과 입이 즐거운 시간이 될 것입니다.
+</h4>
+
+<img src="images/hand1.png" alt="m1"class="mm">
+
+<h3 class="c1"> 체험 순서</h3>
+<h4 class="c2"> 재료:유과반죽,조청, 고물
+
+</h4>
+<div class="mm1">
+
+<div data-aos="flip-left" class="left">
+<img src="images/make3-1.png" alt="유과" class="make">
+</div>
+
+<div data-aos="flip-right" class="right">
+<p class="maketext">
+    01	<br>
+    반죽 만들기 <br>
+    찹쌀을 일주일간 물에 담가 삭힌 후 가루를 내어 콩물과 소주를 넣고 반죽한다.<br>
+    시루에 찐 다음 공기가 들어가도록 절구로 친 후, 전분을 덧 가루로 사용하여 얇게 밀고<br>
+     필요한 사이즈로 재단하여 건조한다.
+    </p>
+</div>
+</div>
+
+
+<div class="mm1">
+    <div data-aos="flip-left" class="left">
+    <img src="images/make3-2.png" alt="유과" class="make">
+</div>
+<div data-aos="flip-right" class="right">
+    <p class="maketext" >
+    02	<br>
+    기름에 튀기기<br>
+    미리 만들어 건조시킨  유과 반죽을 1차로 기름에 불린뒤 50도에 튀겨 떠오르면,<br> 
+    2차로 150도 온도의 기름에 튀기고 여분의 기름을 빼준다.
+</p>
+</div>
+</div>
+
+<div class="mm1">
+    <div data-aos="flip-left" class="left">
+<img src="images/make3-3.png" alt="유과" class="make">
+</div>
+<div data-aos="flip-right" class="right">
+<p class="maketext" >
+    03	<br>
+    조청 묻히기<br>
+    조청을 묻혀준다.<br>
+    시간이 너무 지체되면 유과 반죽에 수분이 들어가므로 되도록 빠른 시간내에 진행한다.
+</p>
+</div>
+</div>
+
+<div class="mm1">
+    <div data-aos="flip-left" class="left">
+<img src="images/make3-4.png" alt="유과" class="make">
+</div>
+
+
+<div data-aos="flip-right" class="right">
+<p class="maketext" >
+04<br>	
+    고물 묻히기<br>
+    오방색  쌀 튀밥 고물을 묻혀준다.<br>
+    호박씨,대추,잣 등으로 고명 장식을 얹는다.
+
+</p>
+</div>
+</div>
+
+
+
+
+
+
+<h2> 다식 만들기</h2>
+
+<h4> 다식은 차와 함께 먹는 전통한과로 차의 은은한 향기와 잘 어우러지는 담백한 맛으로, 무엇보다 풍류와 멋으로 먹는 전통
+    먹거리입니다. 볶은 곡물가루나 천연가루를 꿀이나 조청과 함께 버무려 다식 틀에 찍어내는 과정은 별도의 열처리 과정이 없어
+    어린 아이들이 체험하기에 좋습니다. 다식도 당연히 우리 몸에 좋은 국산 천연 재료만으로 만듭니다.
+      </h4>
+
+      <img src="images/hand2.png" alt="m2" class="mm">
+
+
+      <h3 class="c1"> 체험 순서</h3>
+      <h4 class="c2">재료:콩가루,송화가루,꿀 or 설탕시럽(물엿1컵,설탕1/2컵, 꿀4큰술,물2큰술, 소금 약간)
+      
+      </h4>
+
+      <div class="mm1">
+        <div data-aos="flip-left" class="left">
+        <img src="images/make2-1.png" alt="다식" class="make">
+    </div>
+
+    <div data-aos="flip-right" class="right">
+      <p class="maketext" >
+          01<br>
+          반죽만들기 <br>	
+          콩가루나 송화가루에   (천연 색소 가루를 첨가 )꿀을 섞어 한 덩어리가 되도록 만들어 준다.<br>
+          반죽이 너무 질면  가루를 더 첨가해 적당한  반죽 상태로  조절한다.
+          
+      </p> 
+    </div>
+</div>
+
+
+
+
+
+    <div class="mm1">
+
+
+        <div data-aos="flip-left" class="left">
+        <img src="images/make2-2.png" alt="다식" class="make">
+    </div>
+
+
+    <div data-aos="flip-right" class="right">
+        <p class="maketext" >
+02	<br>
+틀에 찍기<br>
+틀에  반죽을 엄지 손가락 크기만큼 떼어내  동글하게 만들어 틀 위에 놓고 찍어준다.
+
+</p>
+</div>
+</div>
+
+
+
+
+
+<div class="mm1">
+    <div data-aos="flip-left" class="left">
+<img src="images/make2-3.png" alt="다식" class="make">
+</div>
+
+
+<div data-aos="flip-right" class="right"> 
+<p class="maketext">  	               
+    
+    03<br>
+    그릇에 담기<br>
+    찍어낸 다식을 그릇에 담는다.
+    
+    </p>
+</div>
+</div>
+
+      <h2> 엿강정 만들기</h2>
+      <h4>
+      바삭한 식감에 만들기도 수월해 예부터 널리 사랑받아온 엿강정은 우리 주변의 다양한 곡물을
+      조청과 함께 버무려 단단히 굳힌 후 먹는 전통과자입니다. 자연에서 얻은 다양한 색으로 알록달록하고
+      바삭고소한 엿강정을 만들어 봅니다.
+            </h4>
+      
+            <img src="images/hand3.png" alt="m2"class="mm">
+      
+      
+            <h3 class="c1"> 체험 순서</h3>
+            <h4 class="c2">재료:강정용 쌀 튀밥,조청,천연 색소가루
+            
+            </h4>
+
+
+            
+
+      <div class="mm1">
+        <div data-aos="flip-left" class="left">
+            <img src="images/make1-1.png" alt="강정" class="make">
+        </div>
+
+
+        <div data-aos="flip-right" class="right">
+            <p class="maketext" >
+                01<br>	조청 끓이기<br>
+                           
+ 
+ 
+                프라이팬에 조청, 설탕, 식용유 등을 넣고 중불에 기포가 생기도록 끓인다<br>
+
+            </p>
+      </div>
+  </div>
+
+      <div class="mm1">
+        <div data-aos="flip-left" class="left">
+                <img src="images/make1-2.png" alt="강정" class="make">
+
+            </div>
+
+
+
+            <div data-aos="flip-right" class="right">
+<p class="maketext" > 02<br>	쌀 튀밥 넣기<br>
+
+약한 불로 줄인 후 견과류와 쌀 튀밥 2컵을 넣은 후, 엿물이 쌀 튀밥과 골고루 섞이도록 빨리 섞어준다.<br>
+원하는 천연색소가루를 골라 첨가한다.(붉은색:백년초가루, 초록색:대잎가루, 노란색:치자ㆍ단호박가루)
+)</p>
+
+</div>
+</div>
+
+<div class="mm1">
+
+    <div data-aos="flip-left" class="left">
+<img src="images/make1-3.png" alt="강정" class="make">
+</div>
+
+<div data-aos="flip-right" class="right"> 
+
+ <p class="maketext"> 03<br>	저어주기<br>
+시럽과 쌀튀밥이 잘 섞이도록   가느다란 실모양이 나올때까지  재빨리 저어줍니다.
+</p>
+</div>
+</div>
+ 
+
+<div class="mm1">
+    <div data-aos="flip-left" class="left">
+<img src="images/make1-4.png" alt="강정" class="make">
+</div>
+
+
+<div data-aos="flip-right" class="right"> 
+
+<p class="maketext">
+04<br>
+
+밀대로 밀어주기<br>
+
+
+엿강정 틀에 준비된 재료를 넣고 손으로 고르게 편 다음 밀대로 밀어줍니다.<br>
+준비된 원료를 엿강정 틀에 붓고 밀대로 밀어 넓게 편다.<br>
+예쁘게 잘라 쟁반에 붓고 식힌다.
+            
+            </p>
+
+
+<p class="textend">
+    ※ 체험내용 및 체험재료는 상황 및 계절에 따라 변경될 수 있습니다.<br>
+    체험비는 과목별로 10,000원입니다.
+
+</p>
+ </div>
+</div>
+
+    
+</div>
+
+</div>
+
+
+
+
+
+			<div id="tab2" class="tab_content">
+		<div class="hands2">
+           
+
+            <h1>체험학습 예약하기 </h1>
+            <h3>식품명인과 전문 강사진이 함께하는 다양한
+            현장 체험학습은 뜻깊은 시간을 선물합니다.</h3>
+<div id="tablem">
+            <table>
+               <h4> AUGUST 2022</h4>
+                <tr>
+                    <th class="sun">SUN</th>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th class="sat">SAT</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>         
+<tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+</tr>
+<tr>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+</tr>
+<tr>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+</tr>
+<tr>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+    <td>31</td>
+    
+</tr>
+
+            </table>
+
+        </div>
+        </div>
+
+
+    </div>
+    
+
+
+
+			<div id="tab3" class="tab_content">
+
+                <div id="sc">
+              <h1> 체험학습</h1>
+                    <h3>체험학습을 통해 우리 음식문화의 뿌리를 찾아가는 뜻깊은 시간을 보내세요. </h3>
+                    <div class="contents2">
+                        <div class="swiper center">
+                          <div class="swiper-wrapper">
+            
+                            
+            
+            
+                                <div class="scimg swiper-slide">
+                                    
+                                    
+                                    <div class="scimg">
+                                        <img src="images/sc1.jpg" alt="체험학습사진">
+                                    </div>
+                                </div>
+            
+                            
+                                
+                                <div class="scimg swiper-slide">
+                                    
+                                    
+                                    <div class="scimg">
+                                        <img src="images/sc2.jpg" alt="체험학습사진">
+                                    </div>
+                                </div>
+            
+            
+            
+                                <div class="scimg swiper-slide">
+                                    
+                                    
+                                    <div class="scimg">
+                                        <img src="images/sc3.jpg" alt="체험학습사진">
+                                    </div>
+                                </div>
+            
+            
+                                <div class="scimg swiper-slide">
+                                    
+                                    
+                                    <div class="scimg">
+                                        <img src="images/sc4.jpg" alt="체험학습사진">
+                                    </div>
+                                </div>
+            
+                                <div class="scimg swiper-slide">
+                                    
+                                    
+                                    <div class="scimg">
+                                        <img src="images/sc5.jpg" alt="체험학습사진">
+                                    </div>
+                                </div>
+            
+            
+                                <div class="scimg swiper-slide">
+                                    
+                                    
+                                    <div class="scimg">
+                                        <img src="images/sc6.jpg" alt="체험학습사진">
+                                    </div>
+                                </div>
+            
+                                <div class="scimg swiper-slide">
+                                    
+                                    
+                                    <div class="scimg">
+                                        <img src="images/sc7.jpg" alt="체험학습사진">
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- 화살표 버튼 -->
+                            <div class="swiper-button-next con_next"></div>
+                            <div class="swiper-button-prev con_prev"></div>
+                            <!-- 블릿 버튼 -->
+                            <div class="swiper-pagination con_pag"></div>
+                            </div>
+            
+                       
+            
+            
+                  
+            
+                  
+                 
+            
+                  
+                  
+            
+                        <div class="sctext ">
+            
+                            
+            
+                            <p>
+                                부산한과에서는 전통방식의 조청을 활용하여<br>
+                                다양한 한과 체험을 할 수 있는 프로그램을 운영하고
+                                있습니다. <br>
+                            </p>
+                            <p>
+                
+                                단체 체험 프로그램은 한과를 직접 만들고<br>
+                                모양을 내어보는 한과 만들기와 다도예절을 즐겨볼 수 있어<br>
+                                한과와 우리 전통문화에 대한
+                                이해를 넓히고<br>
+                                즐길 수 있는 체험 프로그램입니다.</p>
+                
+                        </div>
+                    </div>
+            
+                    </div>
+                </div>
+            </div><!--tab_content-->
+        </div><!--wrapper-->
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <!--bg-->
+        <div id="footer_inner">
+            <!--마진오토-->
+            <div class="copyright">
+                <ul>
+                    <li> <a href="#">이용약관</a></li>
+                    <li> <a href="#">개인정보처리방침</a></li>
+                    <li> <a href="#">이메일무단수집거부</a></li>
+                    <li> <a href="#">문의하기</a></li>
+                </ul>
+
+            </div>
+
+
+
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/icon_facebook.png" alt="페이스북아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon_twitter.png" alt="트위터아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon_instar.png" alt="인스타 아이콘"></a></li>
+                    <li><a href="#"><img src="images/icon_youtube.png" alt="유튜브 아이콘"></a></li>
+                </ul>
+            </div>
+            <p>
+                부산시 중구 중앙동6가 중앙대로 26 다원 중앙타워10층/대표자명 : 한명옥/ 전화 : 
+                051-111-2222<br>
+                BUSAN is Registered Trandemark of IP lnc. ⓒ IP lnc. All Rights Reserved By BUSANHANGWA
+                CUSTOMER CENTER.
+            </p>
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        var swiper = new Swiper('.center', {
+               slidesPerView: 2,//보여지는슬라이드 개수
+              spaceBetween: 30,
+              loop: true,//슬라이드 무한반복
+              navigation: {//화살표 버튼
+                nextEl: '.con_next',
+                prevEl: '.con_prev',
+              },
+                pagination: {//블릿 버튼
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+            });
+        
+        
+        
+          </script>
+
+<script>
+	AOS.init();
+</script>
+
+
+
+
+</body>
+
+</html>
