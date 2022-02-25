@@ -205,14 +205,15 @@ table{ margin: 0 auto; border-collapse: collapse; width: 1000px;padding: 10px;}
 
 #footer{clear: both;
   background:#522b19;
-  height:200px;
-  padding:30px 0;
+  height:170px;
+  
 }
 
  
 #footer_inner{
   width:1320px;
   margin:0 auto;
+  padding-top: 30px;
 }
 
 .copyright ul li{
@@ -228,7 +229,7 @@ table{ margin: 0 auto; border-collapse: collapse; width: 1000px;padding: 10px;}
 }
 
 .copyright p{
-  padding-top:30px;
+  padding-top:20px;
   clear:both;
   color:#ccc;
 }
@@ -249,4 +250,4 @@ table{ margin: 0 auto; border-collapse: collapse; width: 1000px;padding: 10px;}
 .sns{
   float:right;
 }
-#footer_inner p{ clear: both; text-align: left; color: #fff; padding: 30px 0;}
+#footer_inner p{ clear: both; text-align: left; color: #fff; padding: 20px 0;}
