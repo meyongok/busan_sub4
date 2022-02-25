@@ -90,7 +90,7 @@ position: relative;/*로고포지션의 부모
  .banner4tit{ font-size:55px ; color: #fff;  ;position: absolute; top: 40%; right: 30px;}
 
  #hands{ width: 1320px ; margin: 0 auto; padding: 50px; }
- h4{ font-size: 18px; text-align: center;  padding: 30px;}
+ h4{ font-size: 18px; line-height: 28px;  text-align: center;  padding: 30px;}
  h3{ font-size: 20px; text-align: center;  font-weight: 500;  padding: 30px;}
  h2{ font-size: 28px;  line-height: 45px; padding: 50px 0;}
  h1{ color: #292929; font-size: 35px; font-weight: bold;  line-height: 60px; text-align:center; padding: 80px 0 30px;}
